@@ -1,0 +1,27 @@
+{
+  "name": "cordova-plugin-mute-switch-detector",
+  "version": "1.0.0",
+  "description": "This plugin allows you to detect the state of mute switch on iPhone.",
+  "main": "www/MuteSwitchDetector.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnasFullStack/Cordova-Plugin-Mute-Switch-Detector.git"
+  },
+  "keywords": [
+    "cordova",
+    "plugin",
+    "iPhone",
+    "mute",
+    "switch",
+    "swift"
+  ],
+  "author": "Anas Aboureada aboureada.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AnasFullStack/Cordova-Plugin-Mute-Switch-Detector/issues"
+  },
+  "homepage": "https://github.com/AnasFullStack/Cordova-Plugin-Mute-Switch-Detector#readme"
+}

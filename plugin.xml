@@ -1,0 +1,38 @@
+<plugin xmlns="http://www.phonegap.com/ns/plugins/1.0"
+        id="cordova-plugin-detect-mute-switch"
+        version="0.0.1">
+
+    <name>DetectMuteSwitch</name>
+    <description>This plugin helps you to detect if the mute switch is on or off.</description>
+    <license>MIT</license>
+    <author>Anas Aboureada - anas@aboureada.com</author>
+    <keywords>IOS, cordova, mute switcj</keywords>
+    <repo>https://github.com/anasfullstack/detectmutebutton.git</repo>
+    <issue>https://github.com/anasfullstack/detectmutebutton/issues</issue>
+
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+
+    <dependency id="cordova-plugin-compat" version="^1.0.0" />
+
+    <js-module src="www/MuteSwitchDetector.js" name="MuteSwitchDetector">
+        <clobbers target="cordova.plugins.DetectMuteSwitch"/>
+    </js-module>
+
+    <!-- ios -->
+    <platform name="ios">
+        <config-file target="config.xml" parent="/*">
+            <feature name="MuteSwitchDetector">
+                <param name="ios-package" value="MuteSwitchDetector"/>
+                <param name="onload" value="true"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/ios/MuteSwitchDetector.swift" />
+        <source-file src="src/ios/MuteSwitchDetectorCore.swift" />
+
+        <resource-file src="src/ios/MuteSwitchDetector.bundle" />
+    </platform>
+
+</plugin>
